@@ -1,0 +1,80 @@
+/* Smoll mobile */
+@media (max-width:567px) {
+    #showcase {
+        height: 50vh;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    .menu-wrap {
+        display: block;
+    }
+
+    #showcase .showcase_speatch {
+        padding-top: 8vh;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+}
+
+/* Mobile Large*/
+@media (max-width: 768px) {
+    #showcase {
+        text-align: center;
+        height: 80vh;
+    }
+
+    #showcase .showcase_speatch {
+        padding-top: 12vh;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #showcase .showcase-illustration {
+        position: absolute;
+        opacity: 0.2;
+        /* top: 15%; */
+        left: 15%;
+        z-index: -1;
+    }
+
+    .showcase .showcase-illustration {
+        left: -10% !important;
+    }
+
+    #showcaseheader {
+        font-size: 35px;
+    }
+
+    #services-h1,
+    #skills .header-skills,
+    #contact h1 {
+        font-size: 25px;
+    }
+
+    #contact .button-red-perso {
+        font-size: 16px;
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    footer h3 {
+        font-size: 16px;
+    }
+}
+
+/* Tablete */
+@media (max-width:993px) {
+    header .logo {
+        padding-bottom: 18px;
+        ;
+    }
+
+}

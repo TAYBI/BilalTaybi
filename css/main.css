@@ -1,0 +1,303 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+/* Colors */
+:root {
+  --perso-color: #ff5757;
+  --lighten-color-perso: rgb(255, 109, 109);
+  --purple-perso: #2f2e41;
+  --lightgray: #f6f6f6;
+  --card-color: #686868;
+}
+
+/* General Sttuf */
+.container {
+  margin: auto;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.perso-red-color {
+  color: var(--perso-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-red-perso {
+  color: white;
+  background: var(--perso-color);
+  padding: 7px 30px;
+  border-radius: 20px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  transition: background ease-in-out 0.5s;
+}
+
+.button-red-perso:hover {
+  background: var(--lighten-color-perso);
+}
+
+.hr {
+  height: 2px;
+  width: 100%;
+}
+
+/* Hide menu */
+.menu-wrap {
+  display: none;
+}
+
+/*  Header navbar */
+header {
+  padding-top: 15px;
+}
+
+#navBar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navBar ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+#navBar ul li a {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  transition: color 0.5s ease-in-out;
+}
+
+#navBar ul > li:not(:first-child) a {
+  margin-left: 35px;
+}
+
+#navBar ul li a:hover {
+  color: #4d4c63;
+}
+
+/* ShowCase */
+
+#showcase {
+  height: 100vh;
+}
+
+#showcase .showcase_speatch {
+  padding-top: 20vh;
+  padding-left: 20px;
+}
+
+#showcase .showcase-illustration {
+  padding-top: 8vh;
+}
+
+.showcase .showcase-illustration {
+  padding-top: 12vh !important;
+}
+/* Showcase spqatch styling */
+#showcaseheader {
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding-bottom: 24px;
+}
+
+.showcase_speatch p {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  margin-bottom: 38px;
+  word-spacing: 5px;
+}
+
+/* Services */
+#services {
+  background: var(--purple-perso);
+  color: var(--lightgray);
+  padding: 70px 0px 75px 0px;
+}
+
+#services .card-services {
+  background: var(--lightgray);
+  color: black;
+  text-align: center;
+  max-width: 240px;
+  /* max-height: 300px; */
+  margin: 25px;
+  padding: 15px;
+}
+
+.card-header {
+  font-size: 20px;
+  padding: 14.5px 0px;
+}
+
+.card-text {
+  color: var(--card-color);
+  margin-bottom: 14.5px;
+}
+
+#services-h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+/* Skills Section */
+#skills {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+#skills li {
+  list-style: none;
+}
+
+#skills .cardskills {
+  text-align: center;
+}
+
+.header-skills {
+  font-size: 30px;
+  letter-spacing: 4px;
+  padding-bottom: 35px;
+}
+
+.cardskills {
+  background: var(--lightgray);
+  max-width: 240px !important;
+  margin: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+}
+
+#designSkills {
+  padding-top: 70px;
+}
+
+/* Contact */
+#contact {
+  background: var(--lightgray);
+  padding: 47px 20px;
+}
+
+#contact .contactcard {
+  background: white;
+  max-width: 647px;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 60px 50px;
+}
+
+.form {
+  width: 100% !important;
+  background: #ffffff;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #707070;
+}
+
+#contact form textarea {
+  margin-bottom: 40px;
+}
+
+#contact h1 {
+  font-size: 30px !important;
+  letter-spacing: 5px !important;
+}
+
+/* Footer */
+footer {
+  background: var(--purple-perso);
+  color: white;
+}
+
+footer a {
+  color: white;
+  margin-left: 10px;
+  transition: color ease-in-out 0.5s;
+}
+
+footer a:hover {
+  color: var(--perso-color);
+}
+
+footer h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+}
+
+/* Animation */
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    /* -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg); */
+    transform: rotate(0deg);
+  }
+
+  to {
+    /* -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg); */
+    transform: rotate(1deg);
+  }
+}
+
+.rotating {
+  /* -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite; */
+  animation: rotating 2s linear infinite;
+  transform-origin: center;
+}
