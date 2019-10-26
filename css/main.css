@@ -35,6 +35,10 @@ body {
   padding: 0;
 }
 
+#showcase img {
+  width: 100%;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -92,7 +96,7 @@ header {
   transition: color 0.5s ease-in-out;
 }
 
-#navBar ul > li:not(:first-child) a {
+#navBar ul>li:not(:first-child) a {
   margin-left: 35px;
 }
 
@@ -112,12 +116,13 @@ header {
 }
 
 #showcase .showcase-illustration {
-  padding-top: 8vh;
+  padding-top: 12vh;
 }
 
 .showcase .showcase-illustration {
   padding-top: 12vh !important;
 }
+
 /* Showcase spqatch styling */
 #showcaseheader {
   font-size: 40px;
@@ -236,6 +241,10 @@ header {
   letter-spacing: 5px !important;
 }
 
+#contact button {
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   background: var(--purple-perso);
@@ -261,7 +270,8 @@ footer h3 {
 /* Animation */
 @-webkit-keyframes rotating
 
-/* Safari and Chrome */ {
+/* Safari and Chrome */
+  {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);

@@ -37,13 +37,13 @@
         position: absolute;
         opacity: 0.2;
         /* top: 15%; */
-        left: 15%;
+        left: 5%;
         z-index: -1;
     }
 
-    .showcase .showcase-illustration {
-        left: -10% !important;
-    }
+    /* .showcase .showcase-illustration {
+        /* left: -10% !important; 
+    } */
 
     #showcaseheader {
         font-size: 35px;
@@ -68,6 +68,12 @@
     footer h3 {
         font-size: 16px;
     }
+
+    #footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
 }
 
 /* Tablete */
@@ -75,6 +81,10 @@
     header .logo {
         padding-bottom: 18px;
         ;
+    }
+
+    #showcase .showcase-illustration {
+        padding-top: 18vh;
     }
 
 }

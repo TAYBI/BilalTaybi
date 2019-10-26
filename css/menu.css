@@ -1,139 +1,146 @@
 .menu-wrap {
-    position: fixed;
-    top: 85vh;
-    right: 12px;
-    z-index: 1;
+  position: fixed;
+  top: 85vh;
+  right: 12px;
+  z-index: 1;
 }
 
 .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
 }
 
 .menu-wrap .humburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    padding: 0.5rem;
-    background: var(--perso-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  background: var(--perso-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
 }
 
 .menu-wrap .humburger>div {
-    position: relative;
-    width: 75%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s;
+  position: relative;
+  width: 75%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
 }
 
 /* Top and buttom lines */
 .menu-wrap .humburger>div:before,
 .menu-wrap .humburger>div:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -7px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
 }
 
 .menu-wrap .humburger>div:after {
-    top: 7px;
+  top: 7px;
 }
 
 /* Animate */
 
 .menu-wrap .toggler:checked+.humburger>div {
-    transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .menu-wrap .toggler:checked+.humburger>div:before,
 .menu-wrap .toggler:checked+.humburger>div:after {
-    top: 0;
-    transform: rotate(90deg);
+  top: 0;
+  transform: rotate(90deg);
 }
 
 /* Rotate when the toggler hver */
 .menu-wrap .toggler:checked:hover+.humburger>div {
-    transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-wrap .menu>div {
-    background: rgba(61, 17, 17, 0.9);
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    /* transform: scale(0); */
-    transition: all 0.5s ease;
+  background: rgba(61, 17, 17, 0.9);
+  /* border-radius: 50%; */
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(+100%);
+  transition: all 0.5s ease;
 }
 
 .menu-wrap .menu>div>div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: all 0.5s ease;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 90vw; */
+  max-height: 100vh;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.menu-wrap .menu>div>div>ul {
+  padding: 0px;
 }
 
 .menu-wrap .menu>div>div>ul>li {
-    list-style: none;
-    font-size: 1.5rem;
-    padding: 1rem;
-    text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .menu-wrap .menu>div>div>ul>li>a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.5s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 /* Show the menu when tthe list in clicked */
 
 .menu-wrap .toggler:checked~.menu {
-    visibility: visible;
+  visibility: visible;
 }
 
 .menu-wrap .toggler:checked~.menu>div {
-    /* transform: scale(1); */
-    transition-duration: 0.75s;
+  transform: translateY(0%);
+  transition-duration: 0.75s;
 }
 
 .menu-wrap .toggler:checked~.menu>div>div {
-    opacity: 1;
-    transition: all 0.5s ease;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
