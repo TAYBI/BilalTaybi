@@ -13,7 +13,7 @@
     }
 
     html {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     #showcase .showcase_speatch {
