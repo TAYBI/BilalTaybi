@@ -118,7 +118,7 @@
 
 .menu-wrap .menu>div>div>ul>li {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1rem;
   text-align: center;
 }
@@ -127,6 +127,8 @@
   color: #fff;
   text-decoration: none;
   transition: color 0.5s ease;
+  width: 100%;
+  padding: 1rem;
 }
 
 /* Show the menu when tthe list in clicked */
