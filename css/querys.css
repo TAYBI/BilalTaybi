@@ -1,3 +1,9 @@
+@media (max-width:320px) {
+    #showcaseheader {
+        font-size: 25px !important;
+    }
+}
+
 /* Smoll mobile */
 @media (max-width:567px) {
     #showcase {
@@ -74,7 +80,7 @@
     }
 
     #footer {
-        position: fixed;
+        position: relative;
         width: 100%;
         bottom: 0;
     }

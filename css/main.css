@@ -21,7 +21,11 @@
 }
 
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+body {
+  position: relative;
 }
 
 h1,
