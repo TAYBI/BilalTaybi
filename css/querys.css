@@ -12,6 +12,10 @@
         display: block;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
     #showcase .showcase_speatch {
         padding-top: 8vh;
         padding-left: 40px !important;
