@@ -81,7 +81,11 @@ a {
 
 /*  Header navbar */
 header {
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  position: fixed;
+  width: 100%;
+  background: white;
 }
 
 #navBar ul {
@@ -114,18 +118,22 @@ header {
   height: 100vh;
 }
 
+#shocase::after {
+  height: 216px;
+}
+
 #showcase .showcase_speatch {
-  padding-top: 20vh;
+  padding-top: 25vh;
   padding-left: 20px;
 }
 
 #showcase .showcase-illustration {
-  padding-top: 12vh;
+  padding-top: 25vh;
 }
 
-.showcase .showcase-illustration {
+/* .showcase .showcase-illustration {
   padding-top: 12vh !important;
-}
+} */
 
 /* Showcase spqatch styling */
 #showcaseheader {

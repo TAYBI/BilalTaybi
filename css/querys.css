@@ -28,10 +28,14 @@
         padding-right: 40px !important;
     }
 
+    header .logo {
+        padding-bottom: 0px !important;
+        ;
+    }
 }
 
 /* Mobile Large*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #showcase {
         text-align: center;
         height: 80vh;
@@ -54,6 +58,7 @@
     /* .showcase .showcase-illustration {
         /* left: -10% !important; 
     } */
+
 
     #showcaseheader {
         font-size: 35px;
@@ -84,6 +89,15 @@
         width: 100%;
         bottom: 0;
     }
+
+    #showcaseheader {
+        padding-top: 0vh;
+        padding-bottom: 15px;
+    }
+
+    #showcase .row p {
+        margin-bottom: 15px;
+    }
 }
 
 /* Tablete */
@@ -93,8 +107,14 @@
         ;
     }
 
-    #showcase .showcase-illustration {
-        padding-top: 18vh;
+    #showcaseheader {
+        padding-top: 15vh;
+    }
+
+    #footer {
+        position: relative;
+        width: 100%;
+        margin-top: 60vh;
     }
 
 }
