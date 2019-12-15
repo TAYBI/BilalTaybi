@@ -1,7 +1,7 @@
 .menu-wrap {
   position: fixed;
-  top: 85vh;
-  right: 12px;
+  bottom: 15%;
+  right: 2%;
   z-index: 1;
 }
 
@@ -31,7 +31,7 @@
   border-radius: 25px;
 }
 
-.menu-wrap .humburger>div {
+.menu-wrap .humburger > div {
   position: relative;
   width: 75%;
   height: 2px;
@@ -43,8 +43,8 @@
 }
 
 /* Top and buttom lines */
-.menu-wrap .humburger>div:before,
-.menu-wrap .humburger>div:after {
+.menu-wrap .humburger > div:before,
+.menu-wrap .humburger > div:after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -54,24 +54,24 @@
   background: inherit;
 }
 
-.menu-wrap .humburger>div:after {
+.menu-wrap .humburger > div:after {
   top: 7px;
 }
 
 /* Animate */
 
-.menu-wrap .toggler:checked+.humburger>div {
+.menu-wrap .toggler:checked + .humburger > div {
   transform: rotate(135deg);
 }
 
-.menu-wrap .toggler:checked+.humburger>div:before,
-.menu-wrap .toggler:checked+.humburger>div:after {
+.menu-wrap .toggler:checked + .humburger > div:before,
+.menu-wrap .toggler:checked + .humburger > div:after {
   top: 0;
   transform: rotate(90deg);
 }
 
 /* Rotate when the toggler hver */
-.menu-wrap .toggler:checked:hover+.humburger>div {
+.menu-wrap .toggler:checked:hover + .humburger > div {
   transform: rotate(225deg);
 }
 
@@ -88,7 +88,7 @@
   justify-content: center;
 }
 
-.menu-wrap .menu>div {
+.menu-wrap .menu > div {
   background: rgba(61, 17, 17, 0.9);
   /* border-radius: 50%; */
   width: 200vw;
@@ -102,7 +102,7 @@
   transition: all 0.5s ease;
 }
 
-.menu-wrap .menu>div>div {
+.menu-wrap .menu > div > div {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -112,18 +112,18 @@
   transition: all 0.5s ease;
 }
 
-.menu-wrap .menu>div>div>ul {
+.menu-wrap .menu > div > div > ul {
   padding: 0px;
 }
 
-.menu-wrap .menu>div>div>ul>li {
+.menu-wrap .menu > div > div > ul > li {
   list-style: none;
   font-size: 1.3rem;
   padding: 1rem;
   text-align: center;
 }
 
-.menu-wrap .menu>div>div>ul>li>a {
+.menu-wrap .menu > div > div > ul > li > a {
   color: #fff;
   text-decoration: none;
   transition: color 0.5s ease;
@@ -133,16 +133,16 @@
 
 /* Show the menu when tthe list in clicked */
 
-.menu-wrap .toggler:checked~.menu {
+.menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-.menu-wrap .toggler:checked~.menu>div {
+.menu-wrap .toggler:checked ~ .menu > div {
   transform: translateY(0%);
   transition-duration: 0.75s;
 }
 
-.menu-wrap .toggler:checked~.menu>div>div {
+.menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   transition: all 0.5s ease;
 }
